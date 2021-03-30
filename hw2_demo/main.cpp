@@ -10,50 +10,13 @@ AnalogOut aout(PA_4);       // set the analog output
 AnalogIn AIN(A3);           // set the analog input
 
 
-
-
-char conf = 0;      // used to determine whether I confirmed already or not
-/*
-void print_temp(void) { // print the pre_freq on the uLCD
-	uLCD.color(BLUE);  
-    uLCD.background_color(WHITE);
-    uLCD.textbackground_color(WHITE);
-	uLCD.cls();
-	uLCD.text_width(4); //4X size text
-    uLCD.text_height(4);
-	uLCD.locate(0, 0);
-	uLCD.color(GREEN);
-	uLCD.printf("temp = %4d\n", temp);
-	return;
-}
-
-void print_freq(void) { // print the freq on the uLCD
-	uLCD.color(BLUE);  
-    uLCD.background_color(WHITE);
-    uLCD.textbackground_color(WHITE);
-	uLCD.cls();
-	uLCD.text_width(4); //4X size text
-    uLCD.text_height(4);
-	uLCD.locate(0, 3);
-	uLCD.color(GREEN);
-	uLCD.printf("freq = %4d\n", freq);
-	return;
-}
-*/
-
 int main(){
 	int temp = 400;     // the frequency shown on the uLCD
 	int freq = 400;     // the confirm frequency (the frequency of the output wave)	
 	float data[100];    // sampled data
 	uint16_t sample = 0;
 	aout = 1;
-	//int i; // loop index
 
-	// set the mode of the button
-	//b1.mode(PullNone);
-	//b2.mode(PullNone);
-	//b3.mode(PullNone);
-	//print_temp();
     while (1) {
 		// scan the button
 		printf("%d", int(But1));
