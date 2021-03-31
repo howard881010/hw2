@@ -10,10 +10,11 @@ s = serial.Serial(serdev)
 freq = int(s.readline()) # Read an echo string from B_L4S5I_IOT01A terminated with '\n'
 Fs = 50 * freq;  
 Ts = 1.0 / Fs; 
+y = np.arange(0, 1.0 / freq * 2, Ts) 
 n = len(y)
 k = np.arange(n)
 t = np.arange(0, 1.0 / freq * 2, Ts) 
-y = np.arange(0, 1.0 / freq * 2, Ts) 
+
 T = n/Fs
 frq = k/T 
 frq = frq[range(int(n/2))] 
