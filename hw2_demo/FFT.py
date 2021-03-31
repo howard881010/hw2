@@ -7,7 +7,7 @@ serdev = '/dev/ttyACM0'
 
 s = serial.Serial(serdev)
 
-freq = int(s.readline()) # Read an echo string from B_L4S5I_IOT01A terminated with '\n'
+freq = int(s.readline())
 Fs = 50 * freq;  
 Ts = 1.0 / Fs; 
 y = np.arange(0, 1.0 / freq * 2, Ts) 
