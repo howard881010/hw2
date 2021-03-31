@@ -1,3 +1,4 @@
+![Screenshot from 2021-03-30 08-13-01](https://user-images.githubusercontent.com/79572143/113127627-8d8d9200-924b-11eb-89fd-97424f7f83f5.png)
 1. compile the c++ code
 2. push the button A1 is used to decrease the pre_freq by 10
                    A3 is used to increase the pre_freq by 10
